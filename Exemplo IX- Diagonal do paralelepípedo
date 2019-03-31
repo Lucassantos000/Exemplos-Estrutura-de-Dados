@@ -1,0 +1,42 @@
+//Exemplo 9 , PDF da aula 2 (funções) Calcular a diagonal de um paralelepípedo
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+
+float diagonal(float *a, float *b, float *c){
+		
+		float valor, x, y ,z;
+		x = *a;
+		y = *b;
+		z = *c;  
+		valor = sqrt((x*x) + (y*y) + (z*z));
+	
+	return valor;
+}
+
+	main(){
+	setlocale(LC_ALL, "Portuguese");
+		printf("\n\t\t Oi! Tudo bem?\nEste programa tem como função Calcular a diagonal do cubo a partir das medidas dadas. \n ");
+   float a , b, c, D;
+   	if (a==b && b==c ){
+   		printf(" OS valores digitados forma um cubo");
+   		system("pause");
+   		getchar();
+   		system("cls");
+	   }
+   printf("\nSabendo que \"a\" é medida de comprimento \"b\" é medida de largura e \"c\" medida de altura do paralelepípedo :\n");
+   printf("Informe a:");
+   scanf("%f", &a);
+   getchar();
+   printf("Informe b:");
+   scanf("%f", &b);
+   getchar();
+   printf("Informe c:");
+   scanf("%f", &c);
+   getchar();
+
+   D =diagonal (&a,&b,&c );
+   printf("\n O valor da Diagonal desse paralelepípedo é: %.2f", D);
+}
+	
