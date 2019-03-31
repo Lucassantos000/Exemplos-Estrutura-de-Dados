@@ -1,0 +1,32 @@
+//Exemplo 3, PDF da aula 2 (funções) Calculo do quadrado de um número usando funções
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+	int quadrado(int x){
+		
+		int result;
+		result = (x*x); 
+		
+		return result; 
+	}
+	
+main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	long int quad;
+	int valor;
+	
+	printf("Oi! Tudo bem?\nEste programa tem como função calcular o quadrado de um número qualquer\n ");
+	printf("Digite o número para que seja calculado o seu quadrado->");
+	scanf("%d", &valor);
+	fflush(stdin);
+	putchar('\n');
+
+	quad = quadrado(valor);
+	printf("O quadrado de %d é %d", valor , quad);
+	putchar('\n');
+	
+	system("pause");															
+}
