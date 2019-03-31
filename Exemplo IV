@@ -1,0 +1,35 @@
+//Exemplo 4, PDF da aula 2 (funções) Produto de dois números usando passagem de parametro por valor em funções.
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+	int prod(int x, int y){
+		
+		int produto;
+		produto = (x*y); 
+		
+		return produto; 
+	}
+	
+main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	long int result;
+	int a, b;
+	
+	printf("Oi! Tudo bem?\nEste programa tem como função calcular prodtuo de dois números quaisquer\n ");
+	printf("Digite o número 1ª número->");
+	scanf("%d", &a);
+	fflush(stdin);
+	putchar('\n');
+	printf("Digite o número 2ª número->");
+	scanf("%d", &b);
+	fflush(stdin);
+	putchar('\n');
+	result = prod(a,b);
+	printf("O produto entre %d e %d é %d", a ,b, result);
+	putchar('\n');
+	
+	system("pause");															
+}
