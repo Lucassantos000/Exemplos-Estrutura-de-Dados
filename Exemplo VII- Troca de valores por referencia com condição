@@ -1,3 +1,8 @@
+//Exemplo 7 , PDF da aula 2 (funções) funçaõ para troca de valores com passagem de valores por referencia, 
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+	
 	int troca (int *a, int *b)
 // Definição de ponteiros que receberão os valores
 {
